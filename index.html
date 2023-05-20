@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./static/main.css">
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <h1 class="headerMessage1">Hello There</h1>
+            <h2 class="headerMessage2">Where would you like to view the weather today?</h2>
+        </header>
+        <main>
+            <form id="searchForm">
+                <input type="text" placeholder="Enter city name" name="query">
+                <button><img id="searchButton" src="./static/images/search.png" alt=""></button>
+            </form>
+            <img id="displayImage" src="./static/images/weatherapp.webp" alt="">
+            <h3 id="cityNameDisplay"></h3>
+            <article>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="windspeed"></p>
+            </article>
+            <p id="description"></p>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
